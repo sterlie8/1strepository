@@ -3,11 +3,39 @@
 <title>WEB - html</title>
 <meta charset="utf-8">
 
-<h1>3.기획/h1>
+<h1>WEB1 부록 - 코드의 힘 : 댓글 기능 추가</h1>
+댓글 구현은 html만으로는 불가능 - 백엔드 필요<br>
+댓글 기능 자체 뿐만아니라 스팸 차단 기능, 타 서비스(페북 등)과의 연동 기능 등이 필요<br>
+해결법: 남이 만든 코드 활용<br>
+DISQUS/LIVERE<br>
+disqus 가입 - create new site - universal code install<br>
+코드 복사/붙여넣기를 통해 댓글 기능 추가<br>
+<div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://web1-3lppfzxgsj.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
-  만들기 전에 무엇을 만들까 구체화하는 것:기획
-  웹사이트를 만들고 싶다. Html, css, jbscript
+오류 이유: 웹 서버를 이용해 웹페이지를 열어야 함<br>
+localhost 이용: 127.0.0.1/html.html<br>
+**웹서버 설치 이후에 이용 가능 : 19번 강의...들어야하나<br>
 
+
+<br>
 <a href = "html.html"> 처음으로 </a>
 <ol>
 <li><a href = "1.html">수업소개</a></li>
@@ -38,5 +66,6 @@
 <li><a href="26.html">WEB1 부록 - 코드의 힘 : 채팅 기능 추가</a></li>
 <li><a href="27.html">WEB1 부록 : 코드의 힘 : 웹사이트 방문자 분석기</a></li>
 <li><a href="28.html">WEB1 - 엔딩 크래딧</a></li>
+
 
 </ol>
